@@ -8,12 +8,26 @@
       body {
          background-color: gold;
       }
+
+      table, td {
+         border: 2px solid black;
+         border-collapse: collapse;
+      }
+
+      tr:nth-child(even) {
+         background-color: #c5b90a;
+      }
+      
+      th, td {
+         padding: 5px;
+      }
    </style>
 </head>
 <body>
    <h1>I like to eat bananas</h1>
 
    <table>
+      <caption><strong>Potassium your life with these facts</strong></caption>
       <tr>
          <th>Baname</th>
          <th>Banana Style</th>
@@ -32,7 +46,7 @@
       <tr>
          <td>Spider-Man</td>
          <td>Fruit Spider Style</td>
-         <td>Doesn't matter, he's a menace!</td>
+         <td>Is a menace</td>
       </tr>
    </table>
 
