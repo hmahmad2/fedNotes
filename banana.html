@@ -36,6 +36,7 @@
    </style>
 </head>
 <body>
+   <button onclick="hideEvidence()">Nothing to see here</button>
    <h1>I like to eat <span class="tidbit">(and defeat)</span> bananas</h1>
 
    <table>
@@ -93,5 +94,14 @@
       <h3>Cuban Red Bananas</h3>
       <p>Richer and creamier than regular bananas. Even the flesh smells nice.</p>
    </div>
+
+   <script>
+      function hideEvidence() {
+         var x = document.getElementsByClassName("bananas");
+         for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+      }
+   </script>
 </body>
 </html>
