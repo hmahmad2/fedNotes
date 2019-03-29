@@ -45,6 +45,7 @@
 <body>
    <button onclick="hideEvidence()">Nothing to see here</button>
    <a href="#specific">Jumping banana action</a>
+   <button onclick="theyLive()">The elementary truth of this world</button>
    <h1>I like to eat <span class="tidbit">(and defeat)</span> bananas</h1>
 
    <table>
@@ -109,6 +110,10 @@
          for (var i = 0; i < x.length; i++) {
             x[i].style.display = "none";
          }
+      }
+
+      function theyLive() {
+         document.getElementById("specific").innerHTML = "Baynaynaynaynays";
       }
    </script>
 </body>
