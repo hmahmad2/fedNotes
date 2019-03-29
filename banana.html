@@ -16,6 +16,13 @@
          padding: 10px;
       }
 
+      #specific {
+         background-color: blueviolet;
+         color: palegreen;
+         padding: 69px;
+         text-align: right;
+      }
+
       span.tidbit {
          color: blue;
          font-size: 150%;
@@ -37,6 +44,7 @@
 </head>
 <body>
    <button onclick="hideEvidence()">Nothing to see here</button>
+   <a href="#specific">Jumping banana action</a>
    <h1>I like to eat <span class="tidbit">(and defeat)</span> bananas</h1>
 
    <table>
@@ -91,7 +99,7 @@
    </div>
 
    <div class="bananas">
-      <h3>Cuban Red Bananas</h3>
+      <h3 id="specific">Cuban Red Bananas</h3>
       <p>Richer and creamier than regular bananas. Even the flesh smells nice.</p>
    </div>
 
