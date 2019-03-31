@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Labels</title>
+</head>
+<body>
+   <h1>Login</h1>
+   <form action="http://www.wikipedia.com">
+      <!-- Method 1 -->
+      <label for="">
+         Username:
+         <input type="text" placeholder="username">
+      </label>
+      <label for="">
+         Password:
+         <input type="password" placeholder="password">
+      </label>
+
+      <hr>
+      <!-- Method 2 -->
+      <label for="username">Username</label>
+      <input id="username" type="text" placeholder="username">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password">
+      <input type="submit">
+   </form>
+</body>
+</html>
