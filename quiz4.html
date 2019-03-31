@@ -9,34 +9,65 @@
 <body>
    <h1>Register</h1>
    <form>
-      <label for="firstName">First Name:</label>
-      <input id="firstName" type="text" placeholder="John" required>
-      <label for="lastName">Last Name:</label>
-      <input id="LastName" type="text" placeholder="Doe" required>
+      <div>
+         <label for="firstName">First Name:</label>
+         <input id="firstName" type="text" placeholder="John" required>
+         <label for="lastName">Last Name:</label>
+         <input id="LastName" type="text" placeholder="Doe" required>
+      </div>
 
       <br>
+
+      <div>
+         <label for="male">Male</label>
+         <input type="radio" name="genderChoice" id="male" value="Male" required>
+         <label for="female">Female</label>
+         <input type="radio" name="genderChoice" id="female" value="Female">
+         <label for="other">Other</label>
+         <input type="radio" name="genderChoice" id="other" value="Other">
+     </div>
+
+     <br>
+
+      <div>
+         <!-- Method 1 -->
+         <label for="email">Email:</label>
+         <input id="email" type="email" placeholder="your email" required>
+         <!-- second method -->
+         <label>
+            Password: 
+            <input type="password" name="password" pattern=".{5,8}" required title="Password must be between 5-8 characters">
+         </label>
+      </div>
+
       <br>
 
-      <label for="male">Male</label>
-      <input type="radio" name="genderChoice" id="male" value="Male" required>
-      <label for="female">Female</label>
-      <input type="radio" name="genderChoice" id="female" value="Female">
-      <label for="other">Other</label>
-      <input type="radio" name="genderChoice" id="other" value="Other">
-
-      <br>
-      <br>
-
-      <label for="email">Email:</label>
-      <input id="email" type="email" placeholder="your email" required>
-      <label for="password">Password:</label>
-      <input id="password" type="password" placeholder="" required>
-
-      <br>
-      <br>
+      <div>
+         <label>
+            Birthday: 
+            <select name="month" required>
+               <option selected disabled>Month</option>
+               <option>January</option>
+               <option>February</option>
+               <option>March</option>
+            </select>
+            <select name="day" required>
+               <option selected disabled>Day</option>
+               <option>01</option>
+               <option>02</option>
+               <option>03</option>
+            </select>
+            <select name="year" required>
+               <option selected disabled>Year</option>
+               <option>1998</option>
+               <option>1999</option>
+               <option>2000</option>
+            </select>
+         </label>
+      </div>
 
       <!-- <label for="birthDate">Birthday:</label>
-      <input id="birthDate" type="date" placeholder="Doe" required> -->
+      <input id="birthDate" type="date" placeholder="Doe" required>
       <span>Birthday: </span>
       <select name="month" aria-placeholder="mon" required>
          <option>Jan</option>
@@ -55,15 +86,15 @@
          <option>1982</option>
          <option>1983</option>
          <option>1984</option>
-      </select>
+      </select> -->
 
       <br>
-      <br>
-
-      <label for="agreement">I agree to the terms and conditions:</label>
-      <input id="agreement" type="checkbox" required>
-      <label for="submit"></label>
-      <input id="submit" type="submit">
+      
+      <div>
+         <label for="agreement">I agree to the terms and conditions:</label>
+         <input id="agreement" type="checkbox" name="agreement" required>
+         <button>Submit</button>
+      </div>
       
    </form>
 </body>
