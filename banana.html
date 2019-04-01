@@ -107,6 +107,18 @@
    <iframe frameborder="1" height="50%" width="62%" name="banana_frame">Wikipedia page letting you know about banana nutrition</iframe>
    <p><a href="https://en.wikipedia.org/wiki/Banana" target="banana_frame">Take a closer look into bananas</a></p>
 
+   <form action="https://www.allrecipes.com/recipe/20144/banana-banana-bread/">
+      <div>
+         <label for="isBanana">Are you a banana?</label>
+         <input type="radio" name="bananaExistance" id="isBanana" value="yesBanana" required>
+         <label for="isNotBanana">Are you not a banana?</label>
+         <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana">
+      </div>
+      <div>
+         <button>Submit to your Banana Overlords</button>
+      </div>
+   </form>
+
    <script>
       function hideEvidence() {
          var x = document.getElementsByClassName("bananas");
