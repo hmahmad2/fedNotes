@@ -108,12 +108,26 @@
    <p><a href="https://en.wikipedia.org/wiki/Banana" target="banana_frame">Take a closer look into bananas</a></p>
 
    <form action="https://www.allrecipes.com/recipe/20144/banana-banana-bread/">
+      <p>Enter your information to become as a banana!</p>
+
       <div>
          <label for="isBanana">Are you a banana?</label>
-         <input type="radio" name="bananaExistance" id="isBanana" value="yesBanana" required>
+         <input type="radio" name="bananaExistance" id="isBanana" value="yesBanana" title="Are you or are you not a banana?" required>
          <label for="isNotBanana">Are you not a banana?</label>
-         <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana">
+         <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana" title="Are you or are you not a banana?">
       </div>
+
+      <br>
+
+      <div>
+         <label for="name">Name: </label>
+         <input type="text" id="name" placeholder="Steve McQueen" required>
+         <label for="email">Email: </label>
+         <input type="email" id="email" placeholder="abc123@butt.com" required>
+      </div>
+
+      <br>
+
       <div>
          <button onclick="bananaTruths()">Submit to your Banana Overlords</button>
       </div>
