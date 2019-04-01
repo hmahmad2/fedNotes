@@ -79,7 +79,7 @@
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis itaque obcaecati error debitis corrupti, odio voluptate. Aperiam natus voluptates vero, ipsam nisi quisquam, velit odit molestias consequuntur excepturi dolore reiciendis.
    </blockquote>
 
-   <p>Here are some absolutely true facts about bananas</p>
+   <p id="truth">Here are some absolutely true facts about bananas</p>
    <ol type="i">
       <li>Bananas are round</li>
       <li>Bananas can be used as defensive weapons in emergency situations</li>
@@ -115,7 +115,7 @@
          <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana">
       </div>
       <div>
-         <button>Submit to your Banana Overlords</button>
+         <button onclick="bananaTruths()">Submit to your Banana Overlords</button>
       </div>
    </form>
 
@@ -129,6 +129,10 @@
 
       function theyLive() {
          document.getElementById("specific").innerHTML = "Baynaynaynaynays";
+      }
+
+      function bananaTruths() {
+         document.getElementById("truth").innerHTML += " Or some stretched truths, believe what you can."
       }
    </script>
 </body>
