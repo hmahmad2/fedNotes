@@ -4,6 +4,10 @@
    <meta charset="UTF-8">
    <title>Banana Slamma</title>
 
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
    <style>
       body {
          background-color: gold;
@@ -129,7 +133,7 @@
       <br>
 
       <div>
-         <label>
+         <!-- <label>
             Enter your BananaDate: 
             <select name="Month" required>
                <option selected disabled>Banana Month</option>
@@ -152,7 +156,10 @@
                <option>1992</option>
                <option>1993</option>
             </select>
-         </label>
+         </label> -->
+
+         <label for="datepicker">Enter your BananaDay: </label>
+         <input type="text" id="datepicker" required>
       </div>
 
       <br>
@@ -177,6 +184,10 @@
       function bananaTruths() {
          document.getElementById("truth").innerHTML += " Or some stretched truths, believe what you can."
       }
+
+      $( function() {
+         $( "#datepicker" ).datepicker();
+      });
    </script>
 </body>
 </html>
