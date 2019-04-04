@@ -87,6 +87,7 @@
 
 <body>
    <button onclick="hideEvidence()">Nothing to see here</button>
+   <button onclick="showEvidence()">Everything to see here</button>
    <a href="#specific">Jumping banana action</a>
    <button onclick="theyLive()">The elementary truth of this world</button>
    <h1>I like to eat <span class="tidbit">(and defeat)</span> bananas</h1>
@@ -224,6 +225,13 @@
          var x = document.getElementsByClassName("bananas");
          for (var i = 0; i < x.length; i++) {
             x[i].style.display = "none";
+         }
+      }
+
+      function showEvidence() {
+         var x = document.getElementsByClassName("bananas");
+         for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "block";
          }
       }
 
