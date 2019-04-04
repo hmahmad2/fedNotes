@@ -18,6 +18,39 @@
          background-color: gold;
       }
 
+      /* Style the header for the Flexbox */
+      header {
+         background-color: lemonchiffon;
+         padding: 25px;
+         text-align: center;
+         font-size: 30px;
+         color: rgb(163, 64, 163);
+      }
+
+      /* Container for flexboxes */
+      section {
+         display: -webkit-flex;
+         display: flex;
+      }
+
+      /* Style the aside */
+      aside {
+         -webkit-flex: 1;
+         -ms-flex: 1;
+         flex: 1;
+         background: #616054;
+         padding: 20px;
+      }
+
+      /* Style the real content */
+      article {
+         -webkit-flex: 3;
+         -ms-flex: 3;
+         flex: 3;
+         background-color: cornsilk;
+         padding: 10px;
+      }
+
       .bananas {
          background-color: darkgoldenrod;
          color: moccasin;
@@ -51,6 +84,7 @@
       }
    </style>
 </head>
+
 <body>
    <button onclick="hideEvidence()">Nothing to see here</button>
    <a href="#specific">Jumping banana action</a>
@@ -81,9 +115,20 @@
       </tr>
    </table>
 
-   <img src="https://silversneakers-wp-prod.azureedge.net/wp-content/uploads/2018/04/SSBlog_MoreKThanBanana_1400x1050-1024x768.jpg" alt="BaNayNay" style="width:700px;height:500px">
+   <header>
+      <h2>Behold, today's object of interest (and dinner)</h2>
+   </header>
 
-   <p>A quote from this very banana goes as follows: <q>Bananatastic.</q></p>
+   <section>
+      <article>
+         <img src="https://silversneakers-wp-prod.azureedge.net/wp-content/uploads/2018/04/SSBlog_MoreKThanBanana_1400x1050-1024x768.jpg" alt="BaNayNay" style="width:700px;height:500px">
+      </article>
+
+      <aside>
+         <p>A quote from this very banana goes as follows: <q>Bananatastic.</q></p>
+      </aside>
+   </section>
+   
    <blockquote>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis itaque obcaecati error debitis corrupti, odio voluptate. Aperiam natus voluptates vero, ipsam nisi quisquam, velit odit molestias consequuntur excepturi dolore reiciendis.
    </blockquote>
