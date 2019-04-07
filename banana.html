@@ -169,61 +169,63 @@
    <p><a href="https://en.wikipedia.org/wiki/Banana" target="banana_frame">Take a closer look into bananas</a></p>
 
    <form action="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">
-      <p>Enter your information to become as a banana!</p>
+      <fieldset>
+         <legend>Enter your information to become as a banana!</legend>
 
-      <div>
-         <label for="isBanana">Are you a banana?</label>
-         <input type="radio" name="bananaExistance" id="isBanana" value="yesBanana" title="Are you or are you not a banana?" required>
-         <label for="isNotBanana">Are you not a banana?</label>
-         <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana" title="Are you or are you not a banana?">
-      </div>
+         <div>
+            <label for="isBanana">Are you a banana?</label>
+            <input type="radio" name="bananaExistance" id="isBanana" value="yesBanana" title="Are you or are you not a banana?" required>
+            <label for="isNotBanana">Are you not a banana?</label>
+            <input type="radio" name="bananaExistance" id="isNotBanana" value="noBanana" title="Are you or are you not a banana?">
+         </div>
 
-      <br/>
+         <br/>
 
-      <div>
-         <label for="name">Name: </label>
-         <input type="text" id="name" placeholder="Steve McQueen" required>
-         <label for="email">Email: </label>
-         <input type="email" id="email" placeholder="abc123@butt.com" required>
-      </div>
+         <div>
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Steve McQueen" required>
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="abc123@butt.com" required>
+         </div>
 
-      <br/>
+         <br/>
 
-      <div>
-         <!-- <label>
-            Enter your BananaDate: 
-            <select name="Month" required>
-               <option selected disabled>Banana Month</option>
-               <option>Jan</option>
-               <option>Feb</option>
-               <option>Mar</option>
-               <option>Apr</option>
-            </select>
-            <select name="Day" required>
-               <option selected disabled>Banana Day</option>
-               <option>01</option>
-               <option>02</option>
-               <option>03</option>
-               <option>04</option>
-            </select>
-            <select name="Month" required>
-               <option selected disabled>Banana Year</option>
-               <option>1990</option>
-               <option>1991</option>
-               <option>1992</option>
-               <option>1993</option>
-            </select>
-         </label> -->
+         <div>
+            <!-- <label>
+               Enter your BananaDate: 
+               <select name="Month" required>
+                  <option selected disabled>Banana Month</option>
+                  <option>Jan</option>
+                  <option>Feb</option>
+                  <option>Mar</option>
+                  <option>Apr</option>
+               </select>
+               <select name="Day" required>
+                  <option selected disabled>Banana Day</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+               </select>
+               <select name="Month" required>
+                  <option selected disabled>Banana Year</option>
+                  <option>1990</option>
+                  <option>1991</option>
+                  <option>1992</option>
+                  <option>1993</option>
+               </select>
+            </label> -->
 
-         <label for="datepicker">Enter your BananaDay: </label>
-         <input type="text" id="datepicker" required>
-      </div>
+            <label for="datepicker">Enter your BananaDay: </label>
+            <input type="text" id="datepicker" required>
+         </div>
 
-      <br/>
+         <br/>
 
-      <div>
-         <button onclick="bananaTruths()">Submit to your Banana Overlords</button>
-      </div>
+         <div>
+            <button onclick="bananaTruths()">Submit to your Banana Overlords</button>
+         </div>
+      </fieldset>
    </form>
 
    <script>
