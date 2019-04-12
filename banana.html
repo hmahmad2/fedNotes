@@ -96,8 +96,16 @@
       timeToShine {
          display: block;
          background-color: darkorange;
-         padding: 23px;
-         font-size: 23px;
+         padding: 20px;
+         font-size: 20px;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      timeToGrime {
+         display: block;
+         background-color: azure;
+         padding: 20px;
+         font-size: 20px;
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
    </style>
@@ -158,22 +166,26 @@
 
    <br>
 
-   <timeToShine>Making a new banana element!</timeToShine>
+   <timeToShine>
+      <p id="truth">Here are some absolutely true facts about bananas</p>
+      <ol type="i">
+         <li>Bananas are round</li>
+         <li>Bananas can be used as defensive weapons in emergency situations</li>
+         <li>Bananas have a gamut of colors ranging from yellow to gold</li>
+         <li>Bananas are known liars, do not trust their lies</li>
+      </ol>
+   </timeToShine>
 
-   <p id="truth">Here are some absolutely true facts about bananas</p>
-   <ol type="i">
-      <li>Bananas are round</li>
-      <li>Bananas can be used as defensive weapons in emergency situations</li>
-      <li>Bananas have a gamut of colors ranging from yellow to gold</li>
-      <li>Bananas are known liars, do not trust their lies</li>
-   </ol>
+   <timeToGrime>
+      <dl>
+         <dt>How bananas lie</dt>
+         <dd>- with their lies</dd>
+         <dd>- often</dd>
+         <dd>- by hiding the truth inside the lies</dd>
+      </dl>
+   </timeToGrime>
 
-   <dl>
-      <dt>How bananas lie</dt>
-      <dd>- with their lies</dd>
-      <dd>- often</dd>
-      <dd>- by hiding the truth inside the lies</dd>
-   </dl>
+   <br>
 
    <div class="bananas">
       <h3 id="specific">Manzano Bananas</h3>
