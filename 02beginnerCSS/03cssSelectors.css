@@ -1,0 +1,24 @@
+/* 
+selector {
+   property: value;
+}
+*/
+
+body {
+   background: orange;
+}
+
+/* element */
+li {
+   border: 2px dashed cyan;
+}
+
+/* id */
+#important {
+   background: yellow;
+}
+
+/* class */
+.completed {
+   text-decoration: line-through wavy;
+}
