@@ -1,0 +1,33 @@
+/* 
+Specificity - An idea in CSS that we can have multiple styles targeting one element.
+
+Order of Specificity, from lest to most specific
+   1) Type Selectors
+      - li{}
+      - li a{}
+      - la + a{}
+   2) Class, Attribute, and pseudo-class selectors
+   3) id
+*/
+
+body {
+   color: red;
+}
+
+ul {
+   color: purple;
+}
+
+/* more specific than ul, takes priority */
+li {
+   color: orange;
+}
+
+.highlight {
+   background: grey;
+   color: yellow;
+}
+
+#special {
+   color: pink;
+}
