@@ -1,0 +1,36 @@
+/* Advanced Selectors */
+
+/* Stars - Selects everything on the page */
+* {
+   border: 1px solid lightgrey;
+}
+
+/* Descendant Selector (nested inside) */
+li a {
+   color: red;
+}
+
+/* Adjacent Selector - lets us select elements that come after another element (not nested inside, rather a sibling) */
+h4 + ul {
+   border: 4px solid blue;
+}
+
+/* Attribute Selectors - a way to selet elements based off of any attributes; we can also use this to select all images of a particular source or all inputs of a particular type: checkboxes, passwords, radios, etc */
+a[href="http://www.google.com"] {
+   background: pink;
+}
+
+/* nth of type - it takes a number and selects every nth of a specific element */
+ul:nth-of-type(3) {
+   background: purple;
+}
+
+/* give the third li in every given group a green background */
+li:nth-of-type(3) {
+   background: green;
+}
+
+/* give every even numbered element in the group a cyan background */
+li:nth-of-type(even) {
+   background: cyan;
+}
