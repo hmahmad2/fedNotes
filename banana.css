@@ -1,0 +1,103 @@
+/* To ensure that older browsers behave well with these new semantic elements */
+header, section, footer, aside, nav, main, article, figure {
+   display: block; 
+}
+
+body {
+   background-color: gold;
+   /* text-align: center; */
+}
+
+/* Style the header for the Flexbox */
+header {
+   background-color: rgba(255, 250, 205, 0.404);
+   padding: 10px;
+   text-align: center;
+   font-size: 30px;
+   color: rgb(163, 64, 163);
+}
+
+/* Container for flexboxes */
+section {
+   display: -webkit-flex;
+   display: flex;
+}
+
+/* Style the aside */
+aside {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+   /* background: #616054; */
+   padding: 10px;
+   text-align: left;
+   align-self: center;
+}
+
+/* Style the real content */
+article {
+   -webkit-flex: 3;
+   -ms-flex: 3;
+   flex: 3;
+   justify-content: baseline;
+   /* background-color: cornsilk; */
+   /* padding: 10px; */
+}
+
+.bananas {
+   background-color: darkgoldenrod;
+   color: moccasin;
+   margin: 10px;
+   padding: 10px;
+}
+
+/* For the Cuban Red Bananas */
+#specific {
+   background-color: blueviolet;
+   color: palegreen;
+   padding: 10px;
+   /* text-align: right; */
+}
+
+span.tidbit {
+   color: blue;
+   font-size: 150%;
+}
+
+table, td {
+   border: 2px solid black;
+   border-collapse: collapse;
+}
+
+table.center {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+tr:nth-child(even) {
+   background-color: #c5b90a;
+}
+
+th, td {
+   padding: 5px;
+}
+
+#begins {
+   color: rgb(45, 158, 158)
+}
+
+timeToShine {
+   display: block;
+   background-color: darkorange;
+   padding: 20px;
+   font-size: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+timeToGrime {
+   display: block;
+   background-color: azure;
+   padding: 20px;
+   font-size: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
