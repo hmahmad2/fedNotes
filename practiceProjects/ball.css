@@ -1,12 +1,13 @@
 #headering {
    font: 69px;
-   background-color: brown;
+   background-color: rgb(82, 19, 19);
    color: darkturquoise;
    text-align: center;
 }
 
 body {
    background-image: url("assets/ballpitballs.jpg");
-   background-repeat: no-repeat;
+   background-repeat: repeat-y;
    background-position: center;
+   background-color: greenyellow;
 }
