@@ -4,3 +4,9 @@
    color: darkturquoise;
    text-align: center;
 }
+
+body {
+   background-image: url("assets/ballpitballs.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+}
