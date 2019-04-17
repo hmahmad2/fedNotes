@@ -11,3 +11,13 @@ body {
    background-position: center;
    background-color: greenyellow;
 }
+
+#colorButton {
+   padding: 30px;
+   color: cornflowerblue;
+   background-color: darkorange;
+}
+
+#divColorButton {
+   text-align: center;
+}
