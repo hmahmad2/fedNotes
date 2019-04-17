@@ -16,6 +16,7 @@ body {
    padding: 30px;
    color: cornflowerblue;
    background-color: darkorange;
+   display: inline-block;
 }
 
 #divColorButton {
