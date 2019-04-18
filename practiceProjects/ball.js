@@ -3,3 +3,7 @@ function changeBackground(color) {
    var oldColor = document.body.style.backgroundColor;
    document.body.style.backgroundColor = color;
 }
+
+function fixBackground() {
+   document.body.style.backgroundColor = "greenyellow";
+}

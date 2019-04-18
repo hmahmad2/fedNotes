@@ -12,7 +12,7 @@ body {
    background-color: greenyellow;
 }
 
-#colorButton {
+.colorButton {
    padding: 30px;
    color: cornflowerblue;
    background-color: darkorange;
