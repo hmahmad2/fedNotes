@@ -22,3 +22,12 @@ body {
 #divColorButton {
    text-align: center;
 }
+
+#divBallIntro {
+   text-align: center;
+}
+
+#introToBalls {
+   color: rgb(119, 36, 119);
+   background-color: rgb(122, 192, 233);
+}
