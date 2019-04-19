@@ -29,6 +29,13 @@ body {
    font-family: Arial, Helvetica, sans-serif;
 }
 
-#singleBall {
+/* thank you stack overflow for reminding me that images are NOT a block propery */
+#singleRedBall, #singleGreenBall {
    width: 15%;
+   display: block;
+   margin: auto;
 }
+
+/* #singleGreenBall {
+   width: 15%;
+} */
