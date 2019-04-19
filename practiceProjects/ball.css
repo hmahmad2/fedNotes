@@ -48,7 +48,7 @@ body {
    position: relative;
    overflow: hidden;
    /* This is to keep the height 9 / width 16 ration */
-   padding-top: 56.25%; 
+   padding-top: 56.25%;
 }
 
 /* Keeps the iframe itself positioned very specifically WITHIN the div
