@@ -19,11 +19,7 @@ body {
    display: inline-block;
 }
 
-#divColorButton {
-   text-align: center;
-}
-
-#divBallIntro {
+#divColorButton, #divBallIntro {
    text-align: center;
 }
 
