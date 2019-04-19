@@ -19,7 +19,7 @@ body {
    display: inline-block;
 }
 
-#divColorButton, #divBallIntro {
+#divColorButton, #divBallIntro, #divWhatBallsDo {
    text-align: center;
 }
 
@@ -36,6 +36,9 @@ body {
    margin: auto;
 }
 
-/* #singleGreenBall {
-   width: 15%;
-} */
+#whatBallsDo {
+   border: 4px solid rgb(248, 244, 0);
+   background-color: darkolivegreen;
+   color: fuchsia;
+   font-family: cursive;
+}
