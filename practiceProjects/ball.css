@@ -62,3 +62,5 @@ picture */
    height: 100%;
    border: 0;
 }
+
+/* make a viewport thing to have the css adjust the size if hte iframe depending on monitor viewing or mobile viewing */
