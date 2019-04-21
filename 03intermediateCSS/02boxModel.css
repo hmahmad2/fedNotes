@@ -1,0 +1,44 @@
+/* The Box Model */
+/* Each element is represented as a rectangular box which is described using the "Box Model"
+
+Each box has four edges:
+1) Content
+2) Padding
+3) Border
+4) Margin
+*/
+
+p {
+
+   /* content - width and height */
+   /* width: 200px;
+   height: 300px; */
+   width: 50%;
+
+   /* Border */
+   /* border: border-width border-style color; */
+   /* border-width: 2px;
+   border-style: solid;
+   border-color: blue; */
+   border: 2px solid blue;
+
+   /* Padding */
+   /* padding-top: 5px;
+   padding-right: 20px;
+   padding-bottom: 5px;
+   padding-left: 20px; */
+   /* padding: 5px 20px 5px 20px; starting from top, clockwise*/
+   /* padding: 5px 20px; */
+
+   /* padding: 0 1.5em; */
+   /* padding: 10px; */
+   /* next is top, left and right, bottom */
+   padding: 10px 20px 10px; 
+
+   /* Margins */
+   /* same arguments as padding */
+   /* margin: 50px 20px; */
+   /* margin: 0 auto 0 auto; */
+   margin: 0 auto;
+}
+
