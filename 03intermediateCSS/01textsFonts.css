@@ -1,0 +1,49 @@
+/* Fonts */
+p {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+   font-family: 'Pacifico', cursive;
+}
+
+/* Font sizes */
+body {
+   font-size: 10px;
+}
+
+h1 {
+   font-size: 10.0em;
+}
+
+p {
+   /* font-size: 25px; */
+   font-size: 2.5em;
+}
+
+span {
+   font-size: 2rem;
+}
+
+/* Font weight */
+span {
+   /* font-weight: bold */
+   /* font-weight: light; */
+   /* font-weight: normal; */
+   font-weight: 1000;
+}
+
+/* text-align */
+h1 {
+   text-align: center;
+}
+
+/* text-decoration */
+p {
+   /* text-decoration: underline; */
+   /* text-decoration: line-through; */
+   text-decoration: overline;
+}
+
+/* The Box Model
+each elecment is represented as a rectangular box which is described using the "Box Model" */
