@@ -30,6 +30,6 @@ html =  `
       <li>${hello()}</li>
       <li>${age > 30 ? 'Over 30':'Under 30'}</li>
    </ul>
-`
+`;
 
 document.body.innerHTML = html;
