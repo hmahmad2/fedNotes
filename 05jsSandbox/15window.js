@@ -25,6 +25,8 @@ val = window.location.search;
 // window.location.reload();
 // window.history.go(-2);
 
+// NAVIGATOR OBJECT
+
 
 
 // OUTPUT
