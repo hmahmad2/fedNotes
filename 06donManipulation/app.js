@@ -12,6 +12,11 @@ function deleteAllItems(e) {
    if (e.target.classList.contains('clear-tasks')) {
       console.log("Deleting all items");
       // for (var i = 0; i < )
+      let lis = document.querySelectorAll('li');
+      lis.forEach(function(li) {
+         console.log(li.className);
+         li.remove();
+      });
    }
 }
 
