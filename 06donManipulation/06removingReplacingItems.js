@@ -44,16 +44,16 @@ val = link.className;
 val = link.classList;
 val = link.classList[0];
 val = link.classList.add('test');
-val = link.classList.remove('test');
+// val = link.classList.remove('test');
 val = link;
 
-val = link.getAttribute('href');
-val = link.setAttribute('href', 'http://www.google.com');
-val = link.hasAttribute('href');
-link.setAttribute('title', 'Google');
-val = link.hasAttribute('title');
-val = link.removeAttribute('title');
-val = link;
+// val = link.getAttribute('href');
+// val = link.setAttribute('href', 'http://www.google.com');
+// val = link.hasAttribute('href');
+// link.setAttribute('title', 'Google');
+// val = link.hasAttribute('title');
+// val = link.removeAttribute('title');
+// val = link;
 
 
 console.log(val);
