@@ -1,5 +1,6 @@
 document.body.addEventListener('click', deleteItem);
 document.body.addEventListener('click', deleteAllItems);
+document.body.addEventListener('click', addItem);
 
 function deleteItem(e) {
    if (e.target.parentElement.classList.contains('delete-item')) {
@@ -20,6 +21,10 @@ function deleteAllItems(e) {
    }
 }
 
-// function addItem(e) {
-//    if (e.target.parentElement.classList)
-// }
+function addItem(e) {
+   if (e.target.className === 'btn') {
+      let test = document.querySelector('#task-form').children[0].children[0].value;
+      console.log(test);
+      // This is how we get he value of the "New Task"!
+   }
+}
