@@ -23,7 +23,8 @@ function deleteAllItems(e) {
 
 function addItem(e) {
    if (e.target.className === 'btn') {
-      let test = document.querySelector('#task-form').children[0].children[0].value;
+      // let test = document.querySelector('#task-form').children[0].children[0].value;
+      let test = document.querySelector('#task').value;
       console.log(test);
       // This is how we get he value of the "New Task"!
    }
