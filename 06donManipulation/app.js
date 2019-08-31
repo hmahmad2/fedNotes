@@ -1,6 +1,6 @@
 document.body.addEventListener('click', deleteItem);
 document.body.addEventListener('click', deleteAllItems);
-document.body.addEventListener('click', addItem);
+document.body.addEventListener('submit', addItem);
 
 function deleteItem(e) {
    if (e.target.parentElement.classList.contains('delete-item')) {
@@ -21,26 +21,26 @@ function deleteAllItems(e) {
 }
 
 function addItem(e) {
-   if (e.target.className === 'btn') {
+   if (e.target.className === 'btn' || e.type === 'submit') {
       // let test = document.querySelector('#task-form').children[0].children[0].value;
       let newTask = document.querySelector('#task').value;
       // console.log(newTask);
       // This is how we get the value of the "New Task"!
 
-      var listNode = document.createElement('li');
-      listNode.className = 'collection-item';
-      listNode.appendChild(document.createTextNode(newTask));
+      var li = document.createElement('li');
+      li.className = 'collection-item';
+      li.appendChild(document.createTextNode(newTask));
 
       var link = document.createElement('a');
       link.className = 'delete-item secondary-content';
       link.innerHTML = '<i class="fa fa-remove"></i>';
 
-      listNode.appendChild(link);
-      document.querySelector('ul.collection').appendChild(listNode);
+      li.appendChild(link);
+      document.querySelector('ul.collection').appendChild(li);
 
       // okay, this is not working, I can't add a different value otherwise they delete the old ones
 
-      // console.log(link);
-      // console.log(li);
+      console.log(link);
+      console.log(li);
    }
 }
