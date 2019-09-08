@@ -178,8 +178,8 @@ function clearTasks(e) {
 function filterTasks(e) {
    // console.log(e.target.value);
 
-   var fil = e.target.value.toLowerCase();
-   console.log(fil);
+   // var fil = e.target.value.toLowerCase();
+   // console.log(fil);
 
    // get list items in .collection-item class
    // create querySelector for this (run an if/else statement inside it) (maybe put the selector inside the if statement...)
@@ -189,8 +189,27 @@ function filterTasks(e) {
    // do an if statement to compare if the filtered word is in hte text
    // else hide the display
 
+
+
+   // The REAL solution
+   const text = e.target.value.toLowerCase();
+   document.querySelectorAll('.collection-item').forEach(function(task) {
+      const item = task.firstChild.textContent;
+      if (item.toLowerCase().indexOf(text) > -1) {
+         task.style.display = 'block';
+      } else {
+         task.style.display = 'none';
+      }
+   });
+
+
+
+   
    // This is how I do it... this is the array (the [0] is for the element)
    // var tList = document.querySelectorAll('.collection-item')[0].textContent.toLowerCase();
+   // console.log(tList);
+
+   // let tList = Array.from(document.querySelectorAll('.collection-item').value);
    // console.log(tList);
 
    // if (document.querySelectorAll('.collection-item').filter(function(lists) {
@@ -202,13 +221,14 @@ function filterTasks(e) {
    // } else {
    //    // hide the entire li element?
    // }
-   document.querySelectorAll('.collection-item').filter(function(lists) {
-      if (lists.indexOf(fil) > -1) {
-         continue;
-      } else {
-         lists.display = 'none';
-      }
-   });
+
+   // document.querySelectorAll('.collection-item').filter(function(lists) {
+   //    if (lists.indexOf(fil) > -1) {
+   //       continue;
+   //    } else {
+   //       lists.display = 'none';
+   //    }
+   // });
 
    // const cat = tList.children.filter(list => list.indexOf(fil) > -1);
 
